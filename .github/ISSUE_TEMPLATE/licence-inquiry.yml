@@ -1,0 +1,41 @@
+name: Site licence inquiry
+description: Discuss a non-binding US$75 licence for one website.
+title: "Licence inquiry: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a public, non-binding inquiry, not an order. Proposed scope: US$75 for one website, the existing 12 puzzles, one name/two-colour change and static deployment notes. No new levels, exclusivity or ongoing maintenance. Do not post private or payment information.
+  - type: textarea
+    id: intended-use
+    attributes:
+      label: Intended website use
+      description: Describe the kind of website and what you need the game to do. Public information only.
+    validations:
+      required: true
+  - type: textarea
+    id: price-and-scope
+    attributes:
+      label: Price and scope
+      description: Would the proposed US$75 scope work for you? If not, describe a paid alternative or the missing requirement.
+    validations:
+      required: true
+  - type: dropdown
+    id: discovery
+    attributes:
+      label: Where did you find the game?
+      options:
+        - Twelve Tools
+        - PeerPush
+        - GitHub
+        - Another website
+        - Prefer not to say
+    validations:
+      required: false
+  - type: checkboxes
+    id: disclosure
+    attributes:
+      label: Before posting
+      options:
+        - label: I understand this is a public inquiry, no order or payment is accepted, and the game was generated with OpenAI Codex without an exclusive copyright guarantee.
+          required: true
